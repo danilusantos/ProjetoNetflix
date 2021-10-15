@@ -1,0 +1,24 @@
+@media only screen and (max-width: 800px){
+    header .menu, .container, .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 10px 0px 10px 0px;
+    }
+
+    main .filme-principal .description{
+        font-size: 85%;
+        width: 200px;
+    }
+
+    main .filme-principal .title{
+        font-size: 36px;
+    }
+
+    main .filme-principal{
+        height: 400px;
+        background-position: center;
+    }
+}

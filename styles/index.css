@@ -1,0 +1,144 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+    --branco: #AAA;
+}
+
+@font-face{
+    font-family: BebasNeue;
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face{
+    font-family: BebasNeue-Bold;
+    src: url(../fonts/BebasNeue-Bold.ttf);
+}
+
+@font-face{
+    font-family: Lucifer;
+    src: url(../fonts/Supernatural_Knight.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+}
+
+body{
+    color: white;
+    background: var(--preto);
+    font-family: Helvetica, sans-serif;
+}
+
+/* Iniciando customização da barra de Navegação */
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 30px;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: BebasNeue-Bold;
+    font-size: 60px;
+}
+
+header .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header .menu__item{
+    color: var(--branco);
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 20px;
+    transition: .2s;
+}
+
+header .menu__item:hover{
+    color: #FFF;
+    transition: .2s;
+}
+
+/* Finalizando customização da barra de Navegação */
+
+/* Iniciando customização do Conteúdo */
+
+.filme-principal{
+    background: linear-gradient(to left, rgba(0, 0, 0, .05), rgba(0, 0, 0, .90) 100%), url('../img/lucifer/h48Dpb7ljv8WQvVdyFWVLz64h4G.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+    background-position-x: center;
+    margin: auto;
+
+    padding: 0px 30px 40px 30px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    
+}
+
+.filme-principal .title{
+    font-family: Lucifer;
+    font-weight: 400;
+    font-size: 48px;
+    text-transform: capitalize;
+}
+
+.filme-principal .description{
+    margin: 20px 0px 30px 0px;
+    width: 400px;
+    
+    font-weight: normal;
+    text-align: left;
+    font-size: medium;
+}
+
+.filme-principal .play{
+    width: 13px;
+    height: 13px;
+    
+}
+
+.filme-principal button{
+    padding: 10px 15px;
+    font-size: medium;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+    
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(100, 100, 100, .50);
+}
+
+.filme-principal button:hover{
+    background-color: rgba(255, 255, 255, .80);
+    color: black;
+}
+
+.filme-principal i{
+    margin-right: 5px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
